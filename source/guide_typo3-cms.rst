@@ -46,8 +46,8 @@ Your website domain needs to be set up:
 Installation
 ============
 
-``cd`` into the directory above your document root ``/var/www/virtual/$USER/`` and create a new project based on the
-typo3/cms-base-distribution using composer_.
+``cd`` into the directory above your document root ``/var/www/virtual/$USER/`` and create a new project
+based on the typo3/cms-base-distribution using composer_.
 
 ::
 
@@ -80,18 +80,20 @@ Step 1
 Point your browser to your website URL and append ``/typo3`` (e.g. isabell.uber.space/typo3). You will be greeted with a
 "Thank you for downloading" message.
 
-Step 2
-------
-
-Create an empty file ``FIRST_INSTALL`` inside your document root and reload the page. You will be redirected to the
-TYPO3 Install Tool which will guide you through the remaining steps.
+Create an empty file ``FIRST_INSTALL`` (no file extension, all uppercase) inside your document root and reload the page.
+You will be redirected to the TYPO3 Install Tool which will guide you through the remaining steps.
 
 ::
 
  [isabell@stardust ~]$ cd /var/www/virtual/$USER/html
  [isabell@stardust isabell]$ touch FIRST_INSTALL
 
-.. note:: In case you have problems in your environment, you will get warnings or hints in this screen. In this case, you should try to fix them. For the purpose of this guide we assume there are none.
+Step 2
+------
+
+.. note:: In case you have problems in your environment, you will get warnings or hints in this screen. In this case, you should try to fix them.
+
+For the purpose of this guide we assume there are none, so we can proceed with the next step.
 
 Step 3
 ------
@@ -101,27 +103,27 @@ Enter your database credentials_, keep the other settings unchanged, they are co
 Step 4
 ------
 
-Create an additional_ database - for example: `isabell_typo3`.
+Create an additional_ database - for example: ``isabell_typo3``.
 
 Step 5
 ------
 
 Enter a username and password for your first TYPO3 admin user (the password will also be configured for the Install Tool).
 
-.. note:: For security reasons it's best to **not** use the name admin.
+.. note:: For security reasons it's best to **not** use the name ``admin``.
 
 Choose a "site name" which will identify this installation (in the page tree and browser title).
 
 Step 5
 ------
 
-In the last step you may choose whether you want to start with an empty TYPO3 installation (no pages, templates,
-configuration) or if you want to have a preconfigured basis to start from.
+Choose whether you want to start with an empty TYPO3 installation (no pages, templates, configuration) or if you want
+to have a preconfigured basis to start from.
 
 ----
 
-The basic installation procedure is complete, TYPO3 will be working and the most appropriate settings will have been
-made for you at this point. You will get redirected to the Backend and can log in with your admin user account.
+The basic installation procedure is now complete, TYPO3 will be working and the most appropriate settings will have been
+made for you. You will get redirected to the Backend and can log in with your admin user account.
 
 If you wish to make changes to your installation at a later stage, use the `Install Tool`_.
 
@@ -157,6 +159,6 @@ If you have any questions or want to contribute join the `TYPO3 Slack`_.
 
 ----
 
-Tested with TYPO3 8.7 LTS and Uberspace 7.1.1
+Tested with TYPO3 8.7 LTS and Uberspace 7.1.12
 
 .. authors::
